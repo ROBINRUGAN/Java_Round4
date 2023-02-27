@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.example.mapper.RegisterMapper">
+<select id="addAccount" parameterType="com.example.entity.Account">
+    INSERT INTO users(username,password,email,identity)
+    VALUES (#{username},#{password},#{email},#{identity})
+</select>
+</mapper>
